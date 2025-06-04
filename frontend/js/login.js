@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
       if (resposta.ok) {
         localStorage.setItem('token', dados.token);
         alert('Login realizado com sucesso!');
-        window.location.href = '../html/home.html';
+        window.location.href = '../html/new.html';
         // Redirecionar, salvar token, etc.
         // window.location.href = '/dashboard.html';
       } else {

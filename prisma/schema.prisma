@@ -21,11 +21,12 @@ model User {
   task Task[]
 }
 
-model Task{
-  id Int @id @default(autoincrement())
-  title String
+model Task {
+  id          Int      @id @default(autoincrement())
+  title       String
   description String
-  status Boolean @default(false)
-  userId Int
-  User User @relation(fields: [userId], references: [id])
+  status      Boolean  @default(false)
+  date        DateTime @default(now())  // << NOVO CAMPO
+  userId      Int
+  User        User     @relation(fields: [userId], references: [id])
 }

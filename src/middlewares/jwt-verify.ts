@@ -13,6 +13,7 @@ export const jwtVerify: RequestHandler = (req: any, res, next) => {
         }
        
     } catch(error){
+        console.log('erro no jwt')
         res.status(401).json({msg: "Token inválido"})
     }
 }

@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+body{
+    background-color: #dbdbdb;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.top{
+    margin-top: 40px;
+    background-color: white;
+    border-radius: 10px;
+    width: 780px;
+    height: 400px;
+}
+.title{
+    font-weight: bold;
+    margin-top: 15px;
+    font-size: 28px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.area-task{
+    margin-top: 10px;
+}
+.area-task #task{
+    width: 450px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 5px;
+    outline: none;
+}
+.periodo{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+}
+.periodo span{
+    font-weight: 700;
+}
+.periodo input{
+    margin-top: 10px;
+    width: 120px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 5px;
+    outline: none;
+}
+
+.btn-area{
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.btn-area button{
+    font-weight: bold;
+    width: 150px;
+    height: 40px;
+    border: 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.btn-area #btn-add{
+    background-color: #00ff00;
+}
+.btn-area #btn-logout{
+    background-color: #334fff;
+}
+#btn-excluir, .btn-excluir{
+    background-color: #ff0000;
+    color: #fff;
+    border: 0;
+    padding: 8px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.section-task{
+    background-color: white;
+    margin-top: 40px;
+    width: 780px;
+    height: 150px;
+    border-radius: 10px;
+    
+}
+.area {
+    display: grid;
+    grid-template-columns: auto 2fr 1fr auto; /* checkbox | tarefa | data | botão excluir */
+    gap: 10px;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.area-tarefa {
+    word-break: break-word;
+    font-size: 16px;
+    padding: 5px 10px;
+    background-color: #dbdbdb;
+    border-radius: 5px;
+}
